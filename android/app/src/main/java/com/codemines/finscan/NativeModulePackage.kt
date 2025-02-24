@@ -5,7 +5,7 @@ import com.facebook.react.bridge.NativeModule
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.uimanager.ViewManager
 
-class SmsListenerPackage : ReactPackage {
+class NativeModulePackage : ReactPackage {
 
     override fun createViewManagers(reactContext: ReactApplicationContext): List<ViewManager<*, *>> {
         return emptyList()
@@ -13,8 +13,7 @@ class SmsListenerPackage : ReactPackage {
 
     override fun createNativeModules(reactContext: ReactApplicationContext): List<NativeModule> {
         val modules = mutableListOf<NativeModule>()
-//        modules.add(SmsListenerModule(reactContext))
-//        modules.add(SQLiteModule(reactContext))
+//        modules.add(Class(reactContext))
         return modules
     }
 }
