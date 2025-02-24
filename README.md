@@ -77,3 +77,65 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
+
+App Description ::
+
+# Multi-Timer React Native App
+
+## Overview
+This React Native app allows users to create, manage, and interact with multiple customizable timers. Users can assign categories, visualize progress, and perform bulk actions while maintaining a clean UI/UX. Timer data is persisted locally using AsyncStorage.
+
+## Features
+### Core Features
+- **Add Timer**: Create timers with name, duration, and category.
+- **Timer List with Grouping**: Timers are displayed in expandable/collapsible categories.
+- **Timer Management**: Start, pause, reset timers individually.
+- **Progress Visualization**: Show progress bar for each timer.
+- **Bulk Actions**: Start, pause, reset all timers within a category.
+- **User Feedback**: Show a modal when a timer completes.
+
+### Enhanced Functionality
+- **Timer History**: Maintain a log of completed timers.
+- **Customizable Alerts**: On completion of timer alerts with notifications.
+
+### Bonus Features (Optional)
+- **Export Timer Data**: Export history as a JSON file.
+- **Custom Themes**: Light and dark mode support.
+
+## Technical Details
+- **State Management**: `useState` for managing timers and categories.
+- **Navigation**: React Navigation with two screens:
+  - Home Screen: Timer list and grouping.
+  - History Screen: Log of completed timers.
+- **Persistence**: Uses AsyncStorage for storing timers and logs.
+- **Styling**: Styled using `StyleSheet` for a responsive layout.
+- **Timers**: Uses `setInterval` for countdown logic.
+
+## Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/multi-timer-app.git
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+   or
+   ```sh
+   yarn install
+   ```
+3. Start the app:
+   ```sh
+   npx react-native run-android  # For Android
+   npx react-native run-ios      # For iOS
+   ```
+
+## Assumptions Made
+- The app supports only React Native 0.7x+.
+- AsyncStorage is used for persistence, but cloud syncing is not implemented.
+
+## Future Improvements
+- Add animations for smoother UI transitions.
+- Implement push notifications for alerts.
+- Sync timers across devices using Firebase or a backend service.
