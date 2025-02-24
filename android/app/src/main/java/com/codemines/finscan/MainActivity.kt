@@ -1,4 +1,4 @@
-package com.billify
+package com.codemines.finscan
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
